@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshara Mahalingam | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Sticky Navigation (Ivory BG match) -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">Akshara Mahalingam</a>
+            <ul class="nav-links">
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#approach" class="nav-link">Approach</a></li>
+                <li><a href="#timeline" class="nav-link">Timeline</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section (Ivory BG) -->
+        <section class="hero bg-ivory">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-text-block">
+                            <p>Hi there! Here is a little bit about me.
+                                At Barnard, I worked on intelligent systems and built a robot from scratch.
+                                But I was equally curious about how people would understand and respond to what we were
+                                building.</p>
+
+                            <p>That curiosity led me to Harvard, where I traded the robotics lab for VR and AI in
+                                education. I
+                                became obsessed with what it takes for new technologies to move beyond a "cool demo" and
+                                into
+                                real practice.</p>
+
+                            <p>Over time, I realized I did not just want to execute technical plans. I wanted to be
+                                involved in
+                                the decisions behind them: what to prioritize, what assumptions we were making, and how
+                                those
+                                decisions would play out once a system leaves the lab and meets the person using it.</p>
+
+                            <p>Across robotics, VR, AI infrastructure, and academic planning systems, I have kept
+                                returning to
+                                the same goal: thinking through the decisions behind the build, not just the execution
+                                of it.
+                            </p>
+                        </div>
+
+                        <div class="hero-actions">
+                            <a href="#work" class="btn btn-primary">View Work</a>
+                            <a href="#contact" class="btn btn-secondary">Contact</a>
+                        </div>
+                    </div>
+
+                    <div class="hero-image-container">
+                        <img src="akshara_picture.jpeg" alt="Akshara Mahalingam" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section (White BG) -->
+        <section id="work" class="section bg-white">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Selected Work</h2>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card" onclick="toggleCaseStudy('project-1')">
+                        <span class="card-meta">Product Manager | InSync | Oct 2025 – Present</span>
+                        <h3 class="card-title">Academic Planning &amp; Progress Visibility</h3>
+
+                        <div class="card-summary">
+                            <p><strong>Problem:</strong> Academic planning looks straightforward on paper, but in
+                                practice it is shaped by prerequisite chains, policy exceptions, sequencing tradeoffs,
+                                and limited course availability. Students often discover constraints too late.</p>
+                            <p><strong>Approach:</strong> Exploring a product direction that models degree requirements
+                                as structured dependency logic rather than static checklists. The prototype represents
+                                curriculum rules as a graph to surface potential blockers earlier.</p>
+                        </div>
+
+                        <div class="card-tags">
+                            <span class="tag">Product Strategy</span>
+                            <span class="tag">Systems Thinking</span>
+                            <span class="tag">Graph Modeling</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Data Visualization</span>
+                        </div>
+
+                        <div id="project-1" class="case-study">
+                            <h4>Current Focus</h4>
+                            <p>This is an active product exploration. I am refining the data model, pressure-testing
+                                constraint handling, validating assumptions with advisors, and defining what an MVP
+                                would need to demonstrate value for both students and advisors.</p>
+
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project-card" onclick="toggleCaseStudy('project-2')">
+                        <span class="card-meta">Research &amp; Development | MIT | Sep 2024 – Dec 2024</span>
+                        <h3 class="card-title">Pediatric VR Experience</h3>
+
+                        <div class="card-summary">
+                            <p><strong>Problem:</strong> Pediatric MRI scans can be frightening, which often leads to
+                                sedation and a harder experience for kids and caregivers.</p>
+                            <p><strong>Approach:</strong> Built a Unity-based preparation experience that familiarizes
+                                children with the MRI environment through gradual exposure and simple interactions.</p>
+                        </div>
+
+                        <div class="card-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">VR</span>
+                            <span class="tag">UX Research</span>
+                        </div>
+
+                        <div id="project-2" class="case-study">
+                            <h4>Outcome</h4>
+                            <p>Pilot testing suggested improved patient preparedness and a reduction in sedation needs.
+                            </p>
+
+                            <div class="project-media">
+                                <video controls width="100%">
+                                    <source src="ProjectPrakash_Trailer.mov" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project-card" onclick="toggleCaseStudy('project-3')">
+                        <span class="card-meta">Hardware &amp; Software | Barnard College | 2023</span>
+                        <h3 class="card-title">Robotics Studio</h3>
+
+                        <div class="card-summary">
+                            <p><strong>Problem:</strong> Indoor navigation gets difficult fast when environments are
+                                dynamic and imperfect. Small errors compound and robots get stuck in ways that are hard
+                                to anticipate in simulation.</p>
+                            <p><strong>Approach:</strong> Implemented SLAM and iterated on navigation logic with a
+                                custom pathfinding heuristic, tuning control behavior to recover from common failure
+                                cases.</p>
+                        </div>
+
+                        <div class="card-tags">
+                            <span class="tag">ROS</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Hardware Integration</span>
+                        </div>
+
+                        <div id="project-3" class="case-study">
+                            <h4>Outcome</h4>
+                            <p>Improved reliability in testing scenarios and better recovery from environmental
+                                disruptions. The most valuable part was learning how quickly real-world noise exposes
+                                assumptions.</p>
+
+                            <div class="project-media">
+                                <video controls width="100%">
+                                    <source src="robotics.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4 -->
+                    <article class="project-card" onclick="toggleCaseStudy('project-4')">
+                        <span class="card-meta">Product Strategy | Protecto | Oct 2025 – Present</span>
+                        <h3 class="card-title">AI Infrastructure Ecosystem Mapping</h3>
+
+                        <div class="card-summary">
+                            <p><strong>Problem:</strong> As AI adoption accelerates, deployments and data workflows
+                                spread across tools, vendors, and teams. That makes governance, cost visibility, and
+                                risk harder to coordinate.</p>
+                            <p><strong>Approach:</strong> Conducted structured ecosystem research across backup
+                                providers, cloud AI platforms, and emerging AI infrastructure partners. Built a
+                                prioritization framework to evaluate integration leverage, security alignment, and GTM
+                                impact.</p>
+                        </div>
+
+                        <div class="card-tags">
+                            <span class="tag">Product Strategy</span>
+                            <span class="tag">AI Infrastructure</span>
+                            <span class="tag">Ecosystem Analysis</span>
+                            <span class="tag">Framework Design</span>
+                        </div>
+
+                        <div id="project-4" class="case-study">
+                            <h4>Outcome</h4>
+                            <p>Delivered a structured view of the landscape and a decision rubric to guide partnership
+                                prioritization. The work informed roadmap discussions and clarified where Protecto could
+                                differentiate within fast-moving AI workflows.</p>
+                            <ul class="case-study-bullets">
+                                <li>Mapped ecosystem players by data flow layer and integration surface</li>
+                                <li>Identified gaps between deployment velocity and governance maturity</li>
+                                <li>Proposed phased partnership sequencing aligned with current product capabilities
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Approach Section (Ivory BG) -->
+        <section id="approach" class="section bg-ivory">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How I Work</h2>
+                </div>
+
+                <div class="approach-grid">
+                    <div class="approach-card">
+                        <h3>Start with the problem</h3>
+                        <p>I focus on understanding what we are actually trying to solve before writing code.</p>
+                    </div>
+                    <div class="approach-card">
+                        <h3>Understand the constraints</h3>
+                        <p>Every project has boundaries: time, legacy systems, or policy requirements. I look for those
+                            early.</p>
+                    </div>
+                    <div class="approach-card">
+                        <h3>Prototype early</h3>
+                        <p>I prefer testing assumptions with something concrete rather than debating them abstractly.
+                        </p>
+                    </div>
+                    <div class="approach-card">
+                        <h3>Pay attention to edge cases</h3>
+                        <p>Most systems fail quietly at the edges.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section (White BG)
+        <section id="timeline" class="section bg-white">
+            <div class="container">
+                <div class="section-header">
+                    <h2>How This Evolved</h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-entry">
+                        <div class="timeline-title">Building a robot</div>
+                        <p class="timeline-desc">Learned that hardware exposes assumptions quickly.</p>
+                    </div>
+                    <div class="timeline-entry">
+                        <div class="timeline-title">Working with AI workflows</div>
+                        <p class="timeline-desc">Saw how small architectural choices compound over time.</p>
+                    </div>
+                    <div class="timeline-entry">
+                        <div class="timeline-title">Designing VR in education</div>
+                        <p class="timeline-desc">Learned that user behavior rarely matches expectations.</p>
+                    </div>
+                    <div class="timeline-entry">
+                        <div class="timeline-title">Mapping academic planning systems</div>
+                        <p class="timeline-desc">Understood how institutional rules shape product design.</p>
+                    </div>
+                    <div class="timeline-entry">
+                        <div class="timeline-title">Studying AI infrastructure ecosystems</div>
+                        <p class="timeline-desc">Recognized that architecture decisions determine what can evolve later.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- Contact Section (Ivory BG for contrast with White Timeline, matching Footer) -->
+        <section id="contact" class="section bg-ivory">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get in Touch</h2>
+                </div>
+
+                <p>If you are working on something where implementation decisions matter as much as outcomes, I would be
+                    glad to connect.</p>
+
+                <div class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="your@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" placeholder="What's on your mind?"></textarea>
+                    </div>
+                    <button class="btn btn-primary" style="align-self: flex-start;">Send Message</button>
+
+                    <div style="margin-top: var(--spacing-sm);">
+                        <a href="mailto:akshara.mahalingam@gmail.com" class="btn btn-secondary">Email Me</a>
+                        <a href="https://www.linkedin.com/in/akshara-mahalingam/" class="btn btn-secondary">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-ivory">
+        <div class="container">
+            <p>Built carefully.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
